@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Alfândega</title>
+    <style>
+        body{
+            background: rgb(0, 110, 255);
+            text-align: center;
+            justify-content: center;
+            display: flex;
+        }
+        #corpo{
+            border: solid 1px;
+            background:azure;
+            border-radius: 1%;
+            width: 50%;
+            height: 200px;
+            font-size: 20px;
+        }
+        #res{
+            margin-top: 10px;
+        }
+        #title{
+            background: rgb(3, 0, 185);
+            color: white;
+        }
+    </style>
+</head>
+<body>
+    <div id="corpo">
+        <h1 id="title">Alfândega</h1>
+        Qual o seu pais de origem:<input type="text" name="" id="txtpais">
+        <input type="button" value="Verificar" onclick="verificar()">
+        <div id="res">Resultado...</div>
+    </div>
+    <script>
+        function verificar() {
+            var pais = document.querySelector('input#txtpais').value.trim().toLowerCase()
+            var res = document.querySelector('div#res')
+        
+        if (pais == 'brasil'|| pais == 'brazil') {
+            res.innerHTML = `Você é <strong>Brasileiro</strong>!`    
+        }else{
+            res.innerHTML = `No Brasil você é <strong>estrangeiro</strong>!`
+        }
+        
+    }
+    
+    </script>
+</body>
+</html>
+
+
+
+
