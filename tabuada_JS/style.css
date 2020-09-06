@@ -1,0 +1,30 @@
+body{
+    background-color: lightseagreen;
+    font: normal 25pt arial;
+}
+header{
+    color: white;
+    text-align: center;
+    text-shadow: 1px 1px black;
+}
+section{
+    background: white;
+    border-radius: 10px;
+    padding: 5px;
+    width: 50%;
+    margin: auto;
+    box-shadow: 5px 5px 10px black;
+    font-size: 15pt;
+
+}
+#button{
+    background-color: lightseagreen;
+    border-radius: 5px;
+    font-size: 12pt;
+}
+footer{
+    color: white;
+    text-align: center;
+    text-shadow: 1px 1px black;
+    font: italic 15pt arial; 
+}
