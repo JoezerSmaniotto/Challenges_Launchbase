@@ -1,5 +1,6 @@
 //armazenar um array de usuarios, cada usuario tem nome e suas tecnologias
 //percorra a lista de usuarios com uma estrutura de repetiçao imprimindo as info dos usuarios
+
 const usuarios =[
     {
         nome: 'Carlos',
@@ -14,6 +15,7 @@ const usuarios =[
         tecnologias:['HTML','NodeJs', 'JS']
     }
 ]
+// imprime em terminal o resultado
 
 for (let i = 0; i < usuarios.length; i++) {
     let result = ''
