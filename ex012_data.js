@@ -1,3 +1,4 @@
+//  faz a data completa
 var agora = new Date() //pega data e hora local
 var hora = agora.getHours() //.getHours pega hora
 var min = agora.getMinutes()// pega minutos
