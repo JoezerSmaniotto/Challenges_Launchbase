@@ -1,4 +1,5 @@
 //          Cálculo de IMC
+
 const nome = 'Wendell'
 const peso = 67
 const altura = 1.78
