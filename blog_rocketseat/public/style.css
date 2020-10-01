@@ -49,6 +49,10 @@ header{
     color: rgb(172, 172, 172);
     margin-top: 9px;
 }
+#wrapper h3{
+    font-size: 32px;
+    color: var(--color-det);
+}
 #wrapper p{
     margin: 20px 250px ;
 }
@@ -81,10 +85,16 @@ footer{
 .card{
     background-color: var(--color-det);
     border-radius: 5px;
+    cursor: pointer;
+    display: grid;
 }
 .card_image img{
     width: 100%;
     border-radius: 5px;
+}
+.card_image_video img{
+    width: 100%;
+    border-radius:5px 5px 0 0;
 }
 .imgpng{
     width: 16px;
@@ -103,6 +113,12 @@ footer{
     pad: 5px 20px;
     text-align: center;
     border-radius: 15px;
+}
+.script_video{
+    background-color: var(--color-det);
+    border-radius: 5px;
+    cursor: pointer;
+    display: grid;
 }
 /* MODAL */
 .modal_overlay{
@@ -155,6 +171,21 @@ iframe{
     position: absolute;
     top: 5%;
 }
+/* VIDEO PAGE */
+.video{
+    margin: 0 auto;
+    max-width:900px;
+    background-color: var(--color-det);
+    border-radius: 5px;
+}
+.card_video{
+    position: relative;
+    padding-top: 60%;
+}
+.card_video iframe{
+    width: 100%;
+}
+/* PAGE ERROR */
 #error{
     text-align: center;
     margin: 20px;

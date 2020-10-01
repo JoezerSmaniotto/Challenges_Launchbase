@@ -1,3 +1,13 @@
+// =====VIDEOS=====
+const videos = document.querySelectorAll('.script_video')
+
+for(let video of videos){
+    video.addEventListener("click",function(){
+        const videoID = video.getAttribute("id")
+        window.location.href = `/video?id=${videoID}`
+    })
+}
+// =====BLOG=====
 const modalOverlay = document.querySelector('.modal_overlay')
 const cards = document.querySelectorAll('.card')  //querySelectorAll pega uma coleçao de itens
 
@@ -13,6 +23,7 @@ document.querySelector('#close').addEventListener("click",function(){
     modalOverlay.classList.remove('active')
     modalOverlay.querySelector("iframe").src = ""
     modalOverlay.classList.remove('modal_overlay_full')
+    modalOverlay.querySelector('#open_in_full').innerHTML='open_in_full'
 })
 
 document.querySelector('#open_in_full').addEventListener("click",function(){
@@ -24,3 +35,4 @@ document.querySelector('#open_in_full').addEventListener("click",function(){
         modalOverlay.querySelector('#open_in_full').innerHTML='close_fullscreen'
     }
 })
+
