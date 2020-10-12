@@ -1,0 +1,36 @@
+{% extends 'layout.njk' %}
+
+{% block title %}
+<title>Foodfy - Receitas</title>
+<link href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet">
+{% endblock%}
+
+{% block content %}
+    <section class="cards">
+        {%for recipe in recipes%}
+        <div id="{{recipe.id}}" class="fix">
+            <img src="{{recipe.id_img}}" alt="Img de {{recipe.title}}">
+            <h3>{{recipe.title}}</h3>
+            <p>por {{recipe.for}}</p>
+        </div>
+        {%endfor%}
+    </section>
+  
+
+    <section class="modal_overlay">
+        <div class="modal">
+            <a class="icon_modal">
+                <span class="material-icons" id="clear">clear</span>
+            </a>
+            <div class="modal_content">
+                <img src="" alt="">
+                <h3></h3>
+                <p></p>
+            </div>
+        </div>
+    </section>
+
+<script type="module" src="/scripts.js"></script>
+
+{% endblock %}

@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+
+    {% block title %}
+    <title>Foodfy</title>
+    {% endblock%}
+
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="shortcut icon" href="data:image/png;base64,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" type="image/x-icon">
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <a href="/">
+                <img src="assets/logo.png" alt="Img Logo">
+            </a>
+        </div>
+        <div class="menu">
+            <a href="/">Inicio</a>
+            <a href="/about">Sobre</a>
+            <a href="/recipe">Receitas</a>
+        </div>
+    </header>
+
+    {% block content %}
+
+    {% endblock %}
+
+    <footer>Com ❤️ <a href="https://github.com/wendell-priebe" target="_blank" rel="noopener noreferrer">Wendell Priebe</a> </footer>
+</body>
+</html>
